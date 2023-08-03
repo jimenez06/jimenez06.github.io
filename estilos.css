@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; /*--esta opcion te apila en cajas y hace que puedas decorar por columnas, como un tablero de ajedrez por cuadricu---*/
+	-moz-box-sizing:border-box; /*border fox se maneja con posocion relativa*/
+	box-sizing: border-box;
+
+}
+
+
+
+
+/*ESTILOS DE INDEX*/
+
+header .empresa{
+    /*font-family: 'Martian Mono', monospace;*/
+    font-family: 'Fasthand', cursive;
+    font-size: 20px;
+    /*background: white;*/
+    background: url('../img/texturafot.jpg');
+    border: 8px solid rgb(255, 255, 255);    
+    
+}
+ header .empresa h3{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+ .empresa .titulo{
+    width: 100%;
+    color: white;
+	
+}
+
+.empresa .titulo .logoem{
+    padding-top: 7px;
+}
+
+
+.debajo-de .prueba{
+color: white;
+font-family: 'Fasthand', cursive;
+    background: url('../img/texturafot.jpg');
+    border: 8px solid rgb(255, 255, 255);  
+font-size: 40px;}
+
+header .empresa .texto{
+    color: white;
+}
+
+.contenedor { /*Las classes son llamadas con un .*/	
+	width: 90%; /*Hace que la pagina se adapte al tamaño que tu deseas*/
+	max-width: 1200px; /*es para la anchura maxima, en pixeles */
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+width: 100%;
+height: 100%;
+background: url('../img/gif.gif');
+background-size: cover ;
+background-attachment: fixed; 
+background-position: center 0; /*EL 0 indica que esta pegado al borde*/
+text-align: center;
+border: 10px solid rgb(16, 11, 11);
+margin-bottom: top; /*espacio del texto menu de la parte de abajo*/
+}
+
+header .contenedor{
+	position: relative;
+	height: 450px;
+}
+
+
+header .menu a{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: inline-block;
+    margin: 40px;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+header .menu a{
+    opacity: .7;
+}
+
+/*cambiar a la hora de poner el apuntado*/
+header .menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+
+    opacity: 1;
+	-webkit-transition: all .3s ease; /*el tiempo que tardara en iluminarse la imagen al pasar el cursor*/
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+    }
+
+
+header .textos h3{
+    /*font-family: 'Rubik Moonrocks', cursive;*/
+    font-family: 'Caprasimo', cursive;
+   /* color: rgb(86, 48, 34);*/
+    -webkit-text-stroke: .2px rgb(0, 0, 0);
+
+
+    background: linear-gradient(#4d3734, #ffffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+
+}
+
+header .textos h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: .2px black;
+    }
+
+header .textos{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 10px;
+    padding-top: 10px; /*espacio de la parte de arriba*/
+}
+
+.inicio{
+    /*background: rgb(134, 99, 99)*/
+    background: url('../img/fondocafeteria.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover ;
+background-attachment: fixed; 
+background-position: center 0; /*EL 0 indica que esta pegado al borde*/
+text-align: center;
+border: 3px solid rgb(255, 255, 255);
+
+}
+
+.inicio .foto{ /*video*/
+    width: 100%;
+	position: top;
+	left: 20px;
+	top: 10px;
+	z-index: 0;
+	/*-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35); /*te permite marcar una sombra en el acerca de*/
+	/*box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35); /*
+	/*webkit te permite trabajar en forma de caja*/
+    height: 100%;
+	float: left;
+}
+
+.inicio .foto video{
+    width: 70%;
+	vertical-align: top;
+}
+
+.inicio article {
+	background: url('../img/manchas.jpg'); /*color de fondo del texto acerca de*/
+	padding: 70px;
+	width: 50%;
+	position: relative;
+	/*top: 30px*/
+	top: 100px;
+    left: 25%;
+	/*float: center; /*esta propiedad es para poner un elemento en columnas colocado hacia la derecha*/
+	z-index: 1; /*indica quien comienza en el float*/
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	margin-bottom: 200px; /*espacio del texto menu de la parte de abajo*/
+    border: 10px solid white;
+
+    }
+
+    .inicio .texto h3 {
+        font-family: 'Fasthand', cursive;
+        font-size: 30px;
+        background: white;
+        border: 5px solid black; 
+        margin-bottom: 45px; /*espacio del texto menu de la parte de abajo*/
+    }
+
+    .inicio .texto p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Pacifico', cursive;
+    }
+
+
+
+    /*seccion slider*/
+
+    .fondo-slider{
+        background: linear-gradient(#613f3f, #ffffff, #30201d);
+        -webkit-text-fill-color: transparent;
+        padding-top: 30px; /*espacio de textos ubicacion la parte de arriba*/
+        height: 620px;
+        border: 5px solid white;
+    }
+    
+    .slider{
+        width: 600px;
+        height: 600px;
+        margin: 50px auto 0;
+        overflow: hidden;
+        padding-top: 30px; /*espacio de textos ubicacion la parte de arriba*/
+	margin-bottom: 10px; /*espacio de textos ubicacion de la parte de abajo*/
+    
+        
+    }
+
+    .slider ul{
+        display: flex;
+        padding: 0;
+        animation: cambio 10s infinite alternate ease-in-out;
+        width: 400%;
+        top: 100px;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img{
+        height: 80%;        
+        width: 80%;
+        top: 50px;
+    }
+
+    @keyframes cambio {
+        0%{margin-left: 0;}
+        20% {margin-left: 0;}
+
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}        
+
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+        
+    }
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+.logo{
+    background-image: url('../img/utlogo1.png');  
+    left:0;
+    position: absolute;
+    top:0;
+}
+
+
+
+/*-----Slider para textos---*/
+
+.debajo-de .prueba{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: center;
+    
+}
+
+.debajo-de .prueba ul{
+    display: flex;
+    animation: cambio 10s infinite;
+    width: 400%;
+    
+}
+
+.debajo-de .prueba li{
+    width: 100%;
+    list-style: none;
+}
+
+.debajo-de .prueba h3{
+    width: 80%;
+    height: 80%;
+    
+    
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}        
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+    
+}
+
+
+body{
+    background: radial-gradient(#211313, #d8c3c3, #30201d);
+   
+}
+
+
+
+  .mapa {
+ 	outline: 8px solid rgb(255, 255, 255);
+    margin: 5em auto;
+    width: 350px;
+    height: 350px;  
+    
+ }
+
+  .mapa iframe {
+ 	width: 100%;
+    height: 100%;
+ }
+
+
+ 
+.redes-sociales{
+    font-size: 3rem;
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+
+.pie-pagina{
+    margin-top: 5rem;
+    background: url('../img/fondofooter.jpg');
+    padding: 5rem;
+    color: white;
+    border: 8px solid white;
+}
+
+@media(min-width:768px){
+    .contenedor-piepagina{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+.info{
+    flex: 0 0 calc(25% - 1rem);
+    margin-bottom: 2rem;
+}
+.info h3, .info p{
+    color: var(--blanco);
+    text-align: center;
+}
+.info h3{
+    font-size: 2.2rem;
+}
+.info p{
+    font-size: 1.8rem;
+}
+
+.redes-pie{
+    text-align: center;
+    
+}
+
+.redes-sociales{
+    text-decoration: white;
+}
+
+.footer{
+    text-align: center;
+    background: rgb(101, 65, 62);
+    color: #ffffff;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
